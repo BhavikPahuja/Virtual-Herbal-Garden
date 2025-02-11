@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurvedic Gardens</title>
+    <link rel="stylesheet" href="/Frontend/CSS/gardens.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="/Frontend/HTML/home.html"><img src="/Frontend/Media/logo.png" alt="Logo Here"></a>
+        </div>
+        <div class="search">
+            <form action="#">
+                <input type="search" name="" id="" placeholder="Search Here">
+                <button type="submit">Go</button>
+            </form>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="/Frontend/HTML/home.html">Details</a></li>
+                <li><a href="/Frontend/HTML/home.html">Contact Us</a></li>
+                <li><a href="/Frontend/HTML/home.html">About Us</a></li>
+                <li><a href="#upload">Upload a Plant</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cloud cloud-left"></div>
+    <div class="cloud cloud-right"></div>
+
+    <div class="container">
+        <h1>🌿 Explore Our Herbal Gardens</h1>
+        <div id="gardens"></div>
+    </div>
+
+    <div id="upload">
+        <h2> Upload a new plant: </h2>
+        <p>Want to add a new plant, yes you can from here</p>
+
+        <form onsubmit="addPlant(event)">
+            <input type="text" name="Common_name" id="cName" placeholder="Name">
+            <input type="text" name="Traditional_uses" id="tUses" placeholder="Uses">
+            <input type="submit" value="Upload Plant">
+        </form>
+    </div>
+
+    <div class="popup" id="plantPopup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-desc"></p>
+        </div>
+    </div>
+
+    <script src="/Frontend/Scripts/gardens.js"></script>
+    <script src="/Frontend/Scripts/home.js"></script>
+</body>
+
+</html>
