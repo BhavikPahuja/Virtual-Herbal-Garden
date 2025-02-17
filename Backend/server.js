@@ -4,7 +4,7 @@ const path = require("path");
 const cors = require("cors");
 
 const app = express();
-const PORT = 8000;
+const PORT = 5000;
 
 const DATA_FILE = path.resolve(__dirname, "../Frontend/JSON/plants_data.json");
 
